@@ -8,16 +8,58 @@
 </head>
 <body>
     <div id="introduccion">
-        <h1>Introducción</h1>
-        <div class="videos">
-            <video src="introduccion/Inicio-del-dia.mp4" controls id="video1"></video>
-            <video src="introduccion/final-de-la-introduccion.mp4" controls id="video2" style="display: none;"></video>
+        <h1>INTRODUCCIÓN</h1>
+        <div class="contenido">
+            <button onclick="mostrarVideoAnterior()" id="btnAnterior">Anterior Video</button>
+            <div class="videos">
+                <video src="introduccion/Inicio-del-dia.mp4" controls id="video1"></video>
+                <video src="introduccion/final-de-la-introduccion.mp4" controls id="video2" ></video>
+            </div>
+            <button onclick="mostrarSiguienteVideo()" id="btnSiguiente">Siguiente video</button>
         </div>
-        <button onclick="mostrarSiguienteVideo()" id="btnSiguiente">Siguiente video</button>
-        <button onclick="mostrarVideoAnterior()" id="btnAnterior" style="display: none;">Anterior Video</button>
-    </div>
-    <div>
         
+        
+    </div>
+    <div id="actividad1">
+        <h1>ACTIVIDAD 1</h1>
+        <div class="contenido">
+            <button onclick="anteriorActividad1()" id="btnAnterior-actividad1">Anterior Video</button>
+            <div class="videos">
+                <video src="actividad1/aprendiendo-a-patinar-activad1.mp4" controls id="video1-actividad1"></video>
+                <video src="actividad1/apretando-patines-actividad1.mp4" controls id="video2-actividad1" ></video>
+                <video src="actividad1/Caida-Actividad1.mp4" controls id="video3-actividad1" ></video>
+                <video src="actividad1/chicas-aconsejando-actividad1.mp4" controls id="video4-actividad1" ></video>
+                <video src="actividad1/diego-logra-mantener-equilibrio-actividad1.mp4" controls id="video5-actividad1" ></video>
+                <video src="actividad1/segundo-consejo-actividad1.mp4" controls id="video6-actividad1" ></video>
+                <video src="actividad1/carrera-final-con-diego.mp4" controls id="video7-actividad1" ></video>
+                <video src="actividad1/vista-de-frente-carrera-diego.mp4" controls id="video8-actividad1" ></video>
+                <video src="actividad1/diego-aconsejado-estudiantes.mp4" controls id="video9-actividad1" ></video>
+            </div>
+            <button onclick="siguienteActividad1()" id="btnSiguiente-actividad1">Siguiente video</button>
+        </div>
+    </div>
+    <div id="actividad2">
+        <h1>ACTIVIDAD 2</h1>
+        <div class="contenido">
+            <button onclick="anterioractividad2()" id="btnAnterior-actividad2">Anterior Video</button>
+            <div class="videos">
+                <video src="actividad2/introduccion-actividad2.mp4" controls id="video1-actividad2"></video>
+                <video src="actividad2/carreras-actividad2.mp4" controls id="video2-actividad2" ></video>
+                <video src="actividad2/introspecion-actividad2.mp4" controls id="video3-actividad2" ></video>
+            </div>
+            <button onclick="siguienteActividad2()" id="btnSiguiente-actividad2">Siguiente video</button>
+        </div>
+    </div>
+    <div id="conclusion">
+        <h1>CONCLUSIÓN</h1>
+        <div class="contenido">
+            <button onclick="anteriorConclusion()" id="btnAnterior-conclusion">Anterior Video</button>
+            <div class="videos">
+                <video src="conclusion/estirandose-antes-de-la-conclusion.mp4" controls id="video1-conclusion"></video>
+                <video src="conclusion/conclusion-de-la-actividad.mp4" controls id="video2-conclusion" ></video>
+            </div>
+            <button onclick="siguienteConclusion()" id="btnSiguiente-conclusion">Siguiente video</button>
+        </div>
     </div>
 
     <script src="main.js"></script>

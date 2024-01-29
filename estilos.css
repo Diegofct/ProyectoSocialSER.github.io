@@ -8,15 +8,31 @@ body {
     background-color: #2c2b47;
 }
 
-#introduccion {
+
+
+#introduccion, #actividad1, #actividad2, #conclusion {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    height: 100vh;
-} 
+    height: 600px;
+    width: 100vw;
+}
 
-#introduccion h1 {
+.contenido{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:100vw;
+}
+
+
+#video2, #video2-actividad1, #video3-actividad1, #video4-actividad1, #video5-actividad1,#video6-actividad1,#video7-actividad1,
+#video8-actividad1,#video9-actividad1,#video2-actividad2, #video3-actividad2, #video2-conclusion{
+    display: none;
+}
+
+h1 {
     color: #f08c00;
 }
 
@@ -26,7 +42,8 @@ body {
     border: 1px solid white;
 }
 
-#introduccion button {
+
+button {
     width: 10%;
     height: 10%;
     border: none;
@@ -38,7 +55,7 @@ body {
     transition: 0.1s linear;
 }
 
-#introduccion button:hover {
+button:hover {
     box-shadow: 0 0 30px #f08c00;
     background: linear-gradient(to bottom right, #8a3313, #f08c00 40%);
     cursor: pointer;
